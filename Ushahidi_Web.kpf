@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="464895e2-111a-4f73-a908-1406a9221d10" kpf_version="4" name="Ushahidi_Web.kpf">
+<preference-set idref="464895e2-111a-4f73-a908-1406a9221d10">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>
