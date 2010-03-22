@@ -3,15 +3,14 @@ $lang = array
 (
 	'feed_name' => array
 	(
-		'required' => 'Please enter the name of the feed.',
-		'length'   => 'The feed name field must be at least 3 and no more 
-			70 characters long.'
+		'required' => '请输入 feed 的名字',
+		'length'   => 'feed 名字的长度应在3至70个字符之间'
 	),
 	
 	'feed_url' => array
 	(
-		'required' => 'Please enter feed\'s URL.',
-		'url' => 'Please enter a valid URL. Eg. http://www.ushahidi.com'
+		'required' => '请输入 feed 的网址',
+		'url' => '请输入一个正确的 URL。比如：http://www.ushahidi.com'
 	),
 	'source' => 'SOURCE',
 	'title' => 'TITLE',
