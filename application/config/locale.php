@@ -13,7 +13,7 @@ $config['language'] = array('zh_CN', 'Chinese_P.R.China');
  * All Available Languages
  * Activate new languages by adding them to this array
  */
-$config['all_languages'] = array ( 'en_US'=>'English (US)', 'fr_FR'=>'Français' );
+$config['all_languages'] = array ('zh_CN' => 'Chinese', 'en_US'=>'English (US)', 'fr_FR'=>'Français');
 
 /**
  * Locale timezone. Defaults to use the server timezone.
