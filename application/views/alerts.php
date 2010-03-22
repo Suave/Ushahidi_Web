@@ -49,7 +49,7 @@
 									<?php print form::input('location_find', '', ' title="City, State and/or Country" class="findtext"'); ?>
 									<div style="float:left;margin:9px 0 0 5px;"><input type="button" name="button" id="button" value="Find Location" class="btn_find" /></div>
 									<div id="find_loading" class="report-find-loading"></div>
-									<div style="clear:both;" id="find_text">* If you can't find your location, please click on the map to pinpoint the correct location.</div>
+									<div style="clear:both;" id="find_text">* 如果你没有搜索到你想要的位置， 清使用地图上表示出准确的位置.</div>
 									<div class="alert_slider">
 										<select name="alert_radius" id="alert_radius">
 											<option value="1">1 KM</option>
