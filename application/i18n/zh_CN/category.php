@@ -18,19 +18,19 @@ $lang = array
 	
 	'category_description' => array
 	(
-		'required'		=> 'The description field is required.'
+		'required'		=> '栏目描述是必填项'
 	),	
 	
 	'category_color' => array
 	(
-		'required'		=> 'The color field is required.',
-		'length'		=> 'The color field must be 6 characters long.',
+		'required'		=> '颜色是必填项',
+		'length'		=> '颜色值长度应是6个字符',
 	),
 	
 	'category_image' => array
 	(
-		'valid'		=> 'The image field does not appear to contain a valid file',
-		'type'		=> 'The image field does not appear to contain a valid image. The only accepted formats are .JPG, .PNG and .GIF.',
-		'size'		=> 'Please ensure that image uploads sizes are limited to 50KB.'
+		'valid'		=> '图片文件格式不正确',
+		'type'		=> '图片文件格式不正确，只能上传 .JPG, .PNG 和 .GIF',
+		'size'		=> '图片文件大小不能超过50K'
 	),	
 );

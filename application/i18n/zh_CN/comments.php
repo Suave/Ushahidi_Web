@@ -4,26 +4,26 @@ $lang = array
 (
 	'comment_author' => array
 	(
-		'required'		=> 'The name field is required.',
-		'length'        => 'The name field must be at least 3 characters long.'
+		'required'		=> '名字是必填项',
+		'length'        => '名字长度须大于3个字符'
 	),
 	
 	'comment_description' => array
 	(
-		'required'        => 'The comments field is required.'
+		'required'        => '评论内容是必填项'
 	),
 	
 	'comment_email' => array
 	(
-		'required'    => 'The Email field is required if the checkbox is checked.',
-		'email'		  => 'The Email field does not appear to contain a valid email address?',
-		'length'	  => 'The Email field must be at least 4 and no more 64 characters long.'
+		'required'    => '打钩可将邮件地址设为必填项',
+		'email'		  => '邮件地址格式不正确',
+		'length'	  => '邮件地址长度应在4至64个字符之间'
 	),
 	
 	'captcha' => array
 	(
-		'required' => 'Please enter the security code', 
-		'default' => 'Please enter a valid security code'
+		'required' => '请输入验证码', 
+		'default' => '验证码输入不正确'
 	)
 	
 );

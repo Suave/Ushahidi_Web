@@ -3,62 +3,59 @@
 	(
 		'form_title' => array
 		(
-			'required' => 'Please enter the name of the form.',
-			'length'   => 'The form name field must be at least 3 and no more 
-				100 characters long.'
+			'required' => '请输入表单的名字',
+			'length'   => '表单名字的长度必须在3至100个字符之间'
 		),
 		
 		'form_description' => array
 		(
-			'required' => 'Please enter form\'s Description.'
+			'required' => '请输入表单描述'
 		),
 		
 		'form_id' => array
 		(
-			'default' => 'The default form cannot be deleted.',
-			'required' => 'Please select which form to add this field to.',
-			'numeric' => 'Please select which form to add this field to.'
+			'default' => '默认表单不能删除',
+			'required' => '请选择要添加的表单',
+			'numeric' => '请选择要添加的表单'
 		),
 		
 		'field_type' => array
 		(
-			'required' => 'Please select a Field Type.',
-			'numeric' => 'Please select a valid Field Type.'
+			'required' => '请选择属性类型',
+			'numeric' => '请选择一个有效的类型'
 		),
 		
 		'field_name' => array
 		(
-			'required' => 'Please enter Field Name.',
-			'length'   => 'The Field Name must be at least 3 and no more 
-				100 characters long.'
+			'required' => '请输入属性名称',
+			'length'   => '名称的长度应为3至100个字符'
 		),
 		
 		'field_default' => array
 		(
-			'length'   => 'The Field Name must be at least 3 and no more 
-				200 characters long.'
+			'length'   => '长度应为3至200个字符'
 		),
 		
 		'field_required' => array
 		(
-			'required' => 'Please select Yes or No for Field Required',
-			'between'   => 'You have entered an invalid value for Field Required'
+			'required' => '请选择是否为必填项',
+			'between'   => '你输入的内容格式不正确'
 		),
 		
 		'field_width' => array
 		(
-			'between' => 'Please enter a value 0 to 300 for the Field Width'
+			'between' => '请选择属性输入框长度，须在0到300之间'
 		),
 		
 		'field_height' => array
 		(
-			'between' => 'Please enter a value 0 to 50 for the Field Height'
+			'between' => '请选择属性输入框高度，须在0到50之间'
 		),
 		
 		'field_isdate' => array
 		(
-			'required' => 'Please select Yes or No for the Date Field',
-			'between'   => 'You have entered an invalid value for Date Field'
+			'required' => '请选择是否为必填项',
+			'between'   => '你输入的日期格式不正确'
 		)
 	);
 
