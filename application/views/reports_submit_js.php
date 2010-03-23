@@ -105,12 +105,12 @@
 				},
 				messages: {
 					incident_title: {
-						required: "Please enter a Title",
-						minlength: "Your Title must consist of at least 3 characters"
+						required: "请填写标题",
+						minlength: "标题至少包含3个字"
 					},
 					incident_description: {
-						required: "Please enter a Description",
-						minlength: "Your Description must be at least 3 characters long"
+						required: "情填写说明",
+						minlength: "说明至少包含3个字"
 					},
 					incident_date: {
 						required: "Please enter a Date",
@@ -128,8 +128,8 @@
 						required: "Please enter either AM or PM"
 					},
 					"incident_category[]": {
-						required: "Please select at least one Category",
-						minlength: "Please select at least one Category"
+						required: "请选择至少一个分类",
+						minlength: "请选择至少一个分类"
 					},
 					latitude: {
 						required: "Please select a valid point on the map",
@@ -140,7 +140,7 @@
 						range: "Please select a valid point on the map"
 					},
 					location_name: {
-						required: "Please enter a Location Name"
+						required: "请输入你的位置"
 					},
 					"incident_news[]": {
 						url: "Please enter a valid News link"
