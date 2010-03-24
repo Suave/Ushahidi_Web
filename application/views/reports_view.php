@@ -94,7 +94,8 @@
 						</div>
 						<div class="orig-report">
 							<div class="discussion">
-								<h5>ADDITIONAL REPORTS AND DISCUSSION&nbsp;&nbsp;&nbsp;(<a href="#comments">Add</a>)</h5>
+								<h5>补充报道或发表意见&nbsp;&nbsp;&nbsp;(<a href="#comments">添加</a>)</h5>
+						                <p style="color:#666">你也可以充分利用各种网络资源，豆瓣小组,微博客，<a href="http://home.ngocn.org/" target="_blank">NGOCN社区</a>，<a href="http://www.1kg.org" target="_blank">多背一公斤小组</a>，聊天软件等手段来做具体的交流，请在这里留下入口，让更多人可以参与</p>
 								<?php
 								foreach($incident_comments as $comment)
 								{
