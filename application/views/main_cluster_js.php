@@ -294,7 +294,7 @@
 			mediaType, thisLayerID, thisLayerType, thisLayerUrl, thisLayerColor){
 			
 			var	protocolUrl = "<?php echo url::base(); ?>" + json_url + "/"; // Default Json
-			var thisLayer = "Reports"; // Default Layer Name
+			var thisLayer = "灾情图层"; // Default Layer Name
 			var protocolFormat = OpenLayers.Format.GeoJSON;
 			newlayer = false;
 			

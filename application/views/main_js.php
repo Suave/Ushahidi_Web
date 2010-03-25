@@ -246,7 +246,7 @@
 			mediaType, thisLayerID, thisLayerType, thisLayerUrl, thisLayerColor){
 			
 			var	protocolUrl = "<?php echo url::base(); ?>" + "json/"; // Default Json
-			var thisLayer = "Reports"; // Default Layer Name
+			var thisLayer = "灾情图层"; // Default Layer Name
 			var protocolFormat = OpenLayers.Format.GeoJSON;
 			
 			if (thisLayer && thisLayerType == 'shares')
@@ -423,7 +423,7 @@
 			lon = zoom_point.lon;
 			lat = zoom_point.lat;
 			var content = "<div class=\"infowindow\"><div class=\"infowindow_list\"><ul><li>"+event.feature.attributes.name + "</li></ul></div>";
-			content = content + "\n<div class=\"infowindow_meta\"><a href='javascript:zoomToSelectedFeature("+ lon + ","+ lat +", 1)'>Zoom&nbsp;In</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='javascript:zoomToSelectedFeature("+ lon + ","+ lat +", -1)'>Zoom&nbsp;Out</a></div>";
+			content = content + "\n<div class=\"infowindow_meta\"><a href='javascript:zoomToSelectedFeature("+ lon + ","+ lat +", 1)'>放大</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='javascript:zoomToSelectedFeature("+ lon + ","+ lat +", -1)'>缩小</a></div>";
 			content = content + "</div>";		
 			
 			if (content.search("<script") != -1) {

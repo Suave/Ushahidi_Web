@@ -117,7 +117,7 @@ var process = function (impact_json) {
                     labels[i].show();
                     pathes[i].p.toFront();
                     labels[i].toFront();
-                    usrnm2.innerHTML = impact_json.categories[i].name + " <em>(" + impact_json.categories[i].reports + " Reports)</em>";
+                    usrnm2.innerHTML = impact_json.categories[i].name + " <em>(" + impact_json.categories[i].reports + " 篇报道（查看详情）)</em>";
                     lgnd2.style.backgroundColor = pathes[i].p.attr("fill");
                     nmhldr2.className = "";
                     plchldr.className = "impact_hidden";
