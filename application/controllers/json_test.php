@@ -251,7 +251,7 @@ class Json_Test_Controller extends Template_Controller
 			    $json_item .= "\"properties\": {";
 				if ($marker['child_count'] > 1)
 				{ // Get Properties from Children
-					$json_item .= "\"name\":\"" . htmlentities($marker['child_count']) . " Reports" . "\",";		
+					$json_item .= "\"name\":\"" . htmlentities($marker['child_count']) . " 篇灾情(点击查看)" . "\",";		
 				    $json_item .= "\"category\":[0], ";
 					$json_item .= "\"color\": \"990000\", ";
 				    $json_item .= "\"timestamp\": \"0\", ";
