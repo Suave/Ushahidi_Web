@@ -24,11 +24,11 @@
 									echo " verified_yes";
 								}
 								?>">
-									是否验证？<br/>
+									经过验证？<br/>
 									<?php
 									echo ($incident_verified == 1) ?
 										"<span>是</span>" :
-										"<span>还没有</span>";
+										"<span>否</span>";
 									?>
 								</div>
 								<h1><?php
@@ -68,8 +68,8 @@
 							<div class="location">
 								<div class="incident-notation clearingfix">
 									<ul>
-										<li><img align="absmiddle" alt="Incident" src="<?php echo url::base(); ?>media/img/incident-pointer.jpg"/> Incident</li>
-										<li><img align="absmiddle" alt="Nearby Incident" src="<?php echo url::base(); ?>media/img/nearby-incident-pointer.jpg"/> Nearby Incident</li>
+										<li><img align="absmiddle" alt="Incident" src="<?php echo url::base(); ?>media/img/incident-pointer.jpg"/> 发生位置</li>
+										<li><img align="absmiddle" alt="Nearby Incident" src="<?php echo url::base(); ?>media/img/nearby-incident-pointer.jpg"/> 附近其他事件</li>
 									</ul>
 								</div>
 								<div class="report-map">
