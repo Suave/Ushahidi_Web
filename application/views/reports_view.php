@@ -24,11 +24,11 @@
 									echo " verified_yes";
 								}
 								?>">
-									Verified<br/>
+									是否验证？<br/>
 									<?php
 									echo ($incident_verified == 1) ?
-										"<span>YES</span>" :
-										"<span>NO</span>";
+										"<span>是</span>" :
+										"<span>还没有</span>";
 									?>
 								</div>
 								<h1><?php
@@ -42,19 +42,19 @@
 								?></h1>
 								<ul class="details">
 									<li>
-										<small>Location</small>
+										<small>位置</small>
 										<?php echo $incident_location; ?>
 									</li>
 									<li>
-										<small>Date</small>
+										<small>日期</small>
 										<?php echo $incident_date; ?>
 									</li>
 									<li>
-										<small>Time</small>
+										<small>时间</small>
 										<?php echo $incident_time; ?>
 									</li>
 									<li>
-										<small>Category</small>
+										<small>分类</small>
 										<?php
 											foreach($incident_category as $category) 
 											{ 
@@ -81,11 +81,11 @@
 				</div>
 		
 				<div class="report-description">
-					<h3>Incident Report Description</h3>
+					<h3>详细信息</h3>
 						<div class="content">
 							<?php echo $incident_description; ?>
 							<div class="credibility">
-								Credibility:
+								可信度:
 								<a href="javascript:rating('<?php echo $incident_id; ?>','add','original','oloader_<?php echo $incident_id; ?>')"><img id="oup_<?php echo $incident_id; ?>" src="<?php echo url::base() . 'media/img/'; ?>thumb-up.jpg" alt="UP" title="UP" border="0" /></a>&nbsp;
 								<a href="javascript:rating('<?php echo $incident_id; ?>','subtract','original')"><img id="odown_<?php echo $incident_id; ?>" src="<?php echo url::base() . 'media/img/'; ?>thumb-down.jpg" alt="DOWN" title="DOWN" border="0" /></a>&nbsp;
 								<a href="" class="rating_value" id="orating_<?php echo $incident_id; ?>"><?php echo $incident_rating; ?></a>
@@ -124,7 +124,7 @@
 					?>
 					<!-- start images -->
 					<div class="report-description">
-						<h3>Images</h3>
+						<h3>相关照片</h3>
 						<div class="photos">
 							<?php
 							foreach ($incident_photos as $photo)
@@ -143,12 +143,12 @@
 					?> 
 
 					<div class="report-description">
-						<h3>Related Mainstream News of Incident</h3>
+						<h3>相关媒体新闻</h3>
 						<table>
 							<tr class="title">
-								<th class="w-01">TITLE</th>
-								<th class="w-02">SOURCE</th>
-								<th class="w-03">DATE</th>
+								<th class="w-01">标题</th>
+								<th class="w-02">来源</th>
+								<th class="w-03">日期</th>
 							</tr>
 							<?php
 								foreach ($feeds as $feed)
@@ -178,12 +178,12 @@
 
 
 					<div class="report-description">
-						<h3>Incident Report(s)</h3>
+						<h3>相关灾情报道</h3>
 						<table>
 							<tr class="title">
-								<th class="w-01">TITLE</th>
-								<th class="w-02">LOCATION</th>
-								<th class="w-03">DATE</th>
+								<th class="w-01">标题</th>
+								<th class="w-02">位置</th>
+								<th class="w-03">日期</th>
 							</tr>
 							<?php
 								foreach($incident_neighbors as $neighbor)
@@ -244,7 +244,7 @@
 						{
 					?>
 					<div class="report-description">
-						<h3>Videos</h3>
+						<h3>视频</h3>
 						<div class="block-bg">
 							<div style="overflow:auto; white-space: nowrap; padding: 10px">
 								<?php
@@ -264,13 +264,13 @@
 					<a name="comments"></a>
 					<div class="big-block">
 						<div id="comments" class="report_comment">
-							<h2>Leave a Comment</h2>
+							<h2>留言</h2>
 							<?php
 								if ($form_error) {
 							?>
 							<!-- red-box -->
 							<div class="red-box">
-								<h3>Error!</h3>
+								<h3>错误</h3>
 								<ul>
 									<?php
 										foreach ($errors as $error_item => $error_description)
@@ -285,7 +285,7 @@
 							?>
 							<?php print form::open(NULL, array('id' => 'commentForm', 'name' => 'commentForm')); ?>
 							<div class="report_row">
-								<strong>Name:</strong><br />
+								<strong>名字</strong><br />
 								<?php print form::input('comment_author', $form['comment_author'], ' class="text"'); ?>
 								</div>
 
@@ -294,11 +294,11 @@
 								<?php print form::input('comment_email', $form['comment_email'], ' class="text"'); ?>
 							</div>
 							<div class="report_row">
-								<strong>Comments:</strong><br />
+								<strong>留言:</strong><br />
 								<?php print form::textarea('comment_description', $form['comment_description'], ' rows="4" cols="40" class="textarea long" ') ?>
 							</div>
 							<div class="report_row">
-								<strong>Security Code:</strong><br />
+								<strong>验证码:</strong><br />
 								<?php print $captcha->render(); ?><br />
 								<?php print form::input('captcha', $form['captcha'], ' class="text"'); ?>
 							</div>
