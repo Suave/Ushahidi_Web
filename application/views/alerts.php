@@ -19,6 +19,7 @@
 						<!-- start alerts block -->
 						<div class="big-block">
 							<h1><?php echo Kohana::lang('ui_main.alerts_get'); ?></h1>
+							<span style="color:#666">我们会把您身边的灾情发送给您</span>
 							<?php
 							if ($form_error) {
 							?>
@@ -47,7 +48,7 @@
 								</div>
 								<div class="report-find-location">
 									<?php print form::input('location_find', '', ' title="City, State and/or Country" class="findtext"'); ?>
-									<div style="float:left;margin:9px 0 0 5px;"><input type="button" name="button" id="button" value="Find Location" class="btn_find" /></div>
+									<div style="float:left;margin:9px 0 0 5px;"><input type="button" name="button" id="button" value="搜索位置" class="btn_find" /></div>
 									<div id="find_loading" class="report-find-loading"></div>
 									<div style="clear:both;" id="find_text">* 如果你没有搜索到你想要的位置， 清使用地图上表示出准确的位置.</div>
 									<div class="alert_slider">
