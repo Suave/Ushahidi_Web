@@ -51,32 +51,32 @@
 								?>
 								<?php print form::open(NULL, array('id' => 'contactForm', 'name' => 'contactForm')); ?>
 								<div class="report_row">
-									<strong>Your Name:</strong><br />
+									<strong>你的名子:</strong><br />
 									<?php print form::input('contact_name', $form['contact_name'], ' class="text"'); ?>
 								</div>
 								<div class="report_row">
-									<strong>Your E-Mail Address:</strong><br />
+									<strong>邮箱地址:</strong><br />
 									<?php print form::input('contact_email', $form['contact_email'], ' class="text"'); ?>
 								</div>
 								<div class="report_row">
-									Your Phone Number:<br />
+									电话号码:<br />
 									<?php print form::input('contact_phone', $form['contact_phone'], ' class="text"'); ?>
 								</div>
 								<div class="report_row">
-									<strong>Message Subject:</strong><br />
+									<strong>标题:</strong><br />
 									<?php print form::input('contact_subject', $form['contact_subject'], ' class="text"'); ?>
 								</div>								
 								<div class="report_row">
-									<strong>Message:</strong><br />
+									<strong>留言:</strong><br />
 									<?php print form::textarea('contact_message', $form['contact_message'], ' rows="4" cols="40" class="textarea long" ') ?>
 								</div>		
 								<div class="report_row">
-									<strong>Security Code:</strong><br />
+									<strong>验证码:</strong><br />
 									<?php print $captcha->render(); ?><br />
 									<?php print form::input('captcha', $form['captcha'], ' class="text"'); ?>
 								</div>
 								<div class="report_row">
-									<input name="submit" type="submit" value="Send Message" class="btn_submit" />
+									<input name="submit" type="submit" value="发送" class="btn_submit" />
 								</div>
 								<?php print form::close(); ?>
 							</div>
