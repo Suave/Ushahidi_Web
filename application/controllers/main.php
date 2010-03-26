@@ -276,7 +276,7 @@ class Main_Controller extends Template_Controller {
 				{
 					$startDate .= " selected=\"selected\" ";
 				}
-				$startDate .= ">" . date('M', mktime(0,0,0,$i,1)) . " " . $years . "</option>";
+				$startDate .= ">" . $years . " " . date('m月', mktime(0,0,0,$i,1)) . "</option>";
             }
             $startDate .= "</optgroup>";
 			
@@ -295,7 +295,7 @@ class Main_Controller extends Template_Controller {
 				{
 					$endDate .= " selected=\"selected\" ";
                 }
-                $endDate .= ">" . date('M', mktime(0,0,0,$i,1)) . " " . $years . "</option>";
+                $endDate .= ">" . $years  . " " . date('m月', mktime(0,0,0,$i,1)) . "</option>";
             }
             $endDate .= "</optgroup>";			
         }
