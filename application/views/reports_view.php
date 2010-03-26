@@ -24,7 +24,7 @@
 									echo " verified_yes";
 								}
 								?>">
-									经过验证？<br/>
+									经过验证<br/>
 									<?php
 									echo ($incident_verified == 1) ?
 										"<span>是</span>" :
@@ -100,7 +100,7 @@
 								foreach($incident_comments as $comment)
 								{
 									echo "<div class=\"discussion-box\">";
-									echo "<p><strong>" . $comment->comment_author . "</strong>&nbsp;(" . date('M j Y', strtotime($comment->comment_date)) . ")</p>";
+									echo "<p><strong>" . $comment->comment_author . "</strong>&nbsp;(" . date('Y-m-j', strtotime($comment->comment_date)) . ")</p>";
 									echo "<p>" . $comment->comment_description . "</p>";
 									echo "<div class=\"report_rating\">";
 									echo "	<div>";
@@ -156,7 +156,7 @@
 									$feed_id = $feed->id;
 									$feed_title = text::limit_chars($feed->item_title, 40, '...', True);
 									$feed_link = $feed->item_link;
-									$feed_date = date('M j Y', strtotime($feed->item_date));
+									$feed_date = date('Y-m-j', strtotime($feed->item_date));
 									$feed_source = text::limit_chars($feed->feed->feed_name, 15, "...");
 							?>
 							<tr>
@@ -192,7 +192,7 @@
 									echo "<td class=\"w-01\"><a href=\"" . url::base(); 
 									echo "reports/view/" . $neighbor->id . "\">" . $neighbor->incident_title . "</a></td>";
 									echo "<td class=\"w-02\">" . $neighbor->location->location_name . "</td>";
-									echo "<td class=\"w-03\">" . date('M j Y', strtotime($neighbor->incident_date)) . "</td>";
+									echo "<td class=\"w-03\">" . date('Y-m-j', strtotime($neighbor->incident_date)) . "</td>";
 									echo "</tr>";
 								}
 								?>
@@ -218,7 +218,7 @@
 										$feed_id = $feed->id;
 										$feed_title = text::limit_chars($feed->item_title, 40, '...', True);
 										$feed_link = $feed->item_link;
-										$feed_date = date('M j Y', strtotime($feed->item_date));
+										$feed_date = date('Y-m-j', strtotime($feed->item_date));
 										$feed_source = text::limit_chars($feed->feed->feed_name, 15, "...");
 								?>
 								<tr>
