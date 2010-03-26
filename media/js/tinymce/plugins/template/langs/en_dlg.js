@@ -8,8 +8,8 @@ preview:"Preview",
 warning:"Warning: Updating a template with a different one may cause data loss.",
 mdate_format:"%Y-%m-%d %H:%M:%S",
 cdate_format:"%Y-%m-%d %H:%M:%S",
-months_long:"January,February,March,April,May,June,July,August,September,October,November,December",
-months_short:"Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec",
-day_long:"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday",
-day_short:"Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+months_long:"一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月",
+months_short:"一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月",
+day_long:"周日,周一,周二,周三,周四,周五,周六,周日",
+day_short:"周日,周一,周二,周三,周四,周五,周六,周日"
 });

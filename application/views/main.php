@@ -155,9 +155,9 @@
 										<input type="hidden" value="0" name="currentCat" id="currentCat">
 										<fieldset>
 											<div class="play"><a href="#" id="playTimeline">PLAY</a></div>
-											<label for="startDate">From:</label>
+											<label for="startDate">从</label>
 											<select name="startDate" id="startDate"><?php echo $startDate; ?></select>
-											<label for="endDate">To:</label>
+											<label for="endDate">至</label>
 											<select name="endDate" id="endDate"><?php echo $endDate; ?></select>
 										</fieldset>
 									</form>

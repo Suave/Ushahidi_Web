@@ -670,7 +670,7 @@ Proto.Chart = Class.create({
 				var r = [];
 				var escape = false;
 				if (monthNames == null)
-					monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+					monthNames = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
 				for (var i = 0; i < fmt.length; ++i) {
 					var c = fmt.charAt(i);
 					

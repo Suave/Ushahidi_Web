@@ -77,7 +77,7 @@ var process = function (impact_json) {
                 h += 2;
             }
             var dt = new Date(impact_json.buckets[j].d * 1000);
-            var dtext = dt.getDate() + " " + ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"][dt.getMonth()] + " " + dt.getFullYear();
+            var dtext = dt.getDate() + " " + ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"][dt.getMonth()] + " " + dt.getFullYear();
             r.text(x + 25, h + 10, dtext).attr({"font": '9px "Arial"', stroke: "none", fill: "#aaa"});
             x += 100;
         }
