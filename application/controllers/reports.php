@@ -741,7 +741,7 @@ class Reports_Controller extends Main_Controller {
 			$this->template->content->incident_location = $incident->location->location_name;
 			$this->template->content->incident_latitude = $incident->location->latitude;
 			$this->template->content->incident_longitude = $incident->location->longitude;
-			$this->template->content->incident_date = date('M j Y', strtotime($incident->incident_date));
+			$this->template->content->incident_date = date('Y-m-j', strtotime($incident->incident_date));
 			$this->template->content->incident_time = date('H:i', strtotime($incident->incident_date));
 			$this->template->content->incident_category = $incident->incident_category;
 			

@@ -37,7 +37,7 @@
 								// If Admin is Logged In - Allow For Edit Link
 								if ($logged_in)
 								{
-									echo " [&nbsp;<a href=\"".url::base()."admin/reports/edit/".$incident_id."\">Edit</a>&nbsp;]";
+									echo " [&nbsp;<a href=\"".url::base()."admin/reports/edit/".$incident_id."\">编辑</a>&nbsp;]";
 								}
 								?></h1>
 								<ul class="details">
