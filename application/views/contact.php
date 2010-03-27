@@ -51,7 +51,7 @@
 								?>
 								<?php print form::open(NULL, array('id' => 'contactForm', 'name' => 'contactForm')); ?>
 								<div class="report_row">
-									<strong>你的名子:</strong><br />
+									<strong>您的名字:</strong><br />
 									<?php print form::input('contact_name', $form['contact_name'], ' class="text"'); ?>
 								</div>
 								<div class="report_row">
