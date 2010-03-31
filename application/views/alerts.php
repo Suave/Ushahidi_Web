@@ -41,6 +41,7 @@
 							<?php print form::open() ?>
 							<div class="step-1">
 								<h2><?php echo Kohana::lang('ui_main.alerts_step1_select_city'); ?></h2>
+								<br/>
 							        <p><?php echo Kohana::lang('ui_main.alerts_place_spot'); ?></p>
 								<div class="map">
 									
