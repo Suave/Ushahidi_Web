@@ -122,7 +122,7 @@ class Alerts_Controller extends Controller
 						$subject = "[$site_name] ".$incident->incident_title;
 						$message = $incident->incident_description
 									."<p>".$unsubscribe_message
-									.$alertee->alert_code."</p>";
+									.$alertee->alert_code."</p><br/><a href='http://jiuzai.info/reports/view/".incident_id."'>报道链接</a>";
 
 						if (email::send($to, $from, $subject, $message, TRUE) == 1)
 						{
