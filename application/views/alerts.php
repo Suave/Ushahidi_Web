@@ -19,7 +19,6 @@
 						<!-- start alerts block -->
 						<div class="big-block">
 							<h1><?php echo Kohana::lang('ui_main.alerts_get'); ?></h1>
-							<span style="color:#666">我们会把您身边的灾情发送给您</span>
 							<?php
 							if ($form_error) {
 							?>
@@ -42,8 +41,9 @@
 							<?php print form::open() ?>
 							<div class="step-1">
 								<h2><?php echo Kohana::lang('ui_main.alerts_step1_select_city'); ?></h2>
+							        <p><?php echo Kohana::lang('ui_main.alerts_place_spot'); ?></p>
 								<div class="map">
-									<p><?php echo Kohana::lang('ui_main.alerts_place_spot'); ?></p>
+									
 									<div class="map-holder" id="divMap"></div>
 								</div>
 								<div class="report-find-location">
