@@ -299,7 +299,7 @@ class Reports_Controller extends Main_Controller {
 			$post->pre_filter('trim', TRUE);
 
 			// Add some rules, the input field, followed by a list of checks, carried out in order
-			$post->add_rules('incident_title', 'required', 'length[3,200]');
+			$post->add_rules('incident_title', 'required', 'length[1,200]');
 			$post->add_rules('incident_description', 'required');
 			$post->add_rules('incident_date', 'required', 'date_mmddyyyy');
 			$post->add_rules('incident_hour', 'required', 'between[1,12]');
@@ -313,7 +313,7 @@ class Reports_Controller extends Main_Controller {
 			// Validate for maximum and minimum latitude values
 			$post->add_rules('latitude', 'required', 'between[-90,90]');
 			$post->add_rules('longitude', 'required', 'between[-180,180]');
-			$post->add_rules('location_name', 'required', 'length[3,200]');
+			$post->add_rules('location_name', 'required', 'length[1,200]');
 			
 			//XXX: Hack to validate for no checkboxes checked
 			if (!isset($_POST['incident_category'])) {
@@ -361,12 +361,12 @@ class Reports_Controller extends Main_Controller {
 			// Validate Personal Information
 			if (!empty($_POST['person_first']))
 			{
-				$post->add_rules('person_first', 'length[3,100]');
+				$post->add_rules('person_first', 'length[1,100]');
 			}
 			
 			if (!empty($_POST['person_last']))
 			{
-				$post->add_rules('person_last', 'length[3,100]');
+				$post->add_rules('person_last', 'length[1,100]');
 			}
 			
 			if (!empty($_POST['person_email']))
@@ -623,7 +623,7 @@ class Reports_Controller extends Main_Controller {
 				$post->pre_filter('trim', TRUE);
 		
 				// Add some rules, the input field, followed by a list of checks, carried out in order
-				$post->add_rules('comment_author', 'required', 'length[3,100]');
+				$post->add_rules('comment_author', 'required', 'length[1,100]');
 				$post->add_rules('comment_description', 'required');
 				$post->add_rules('comment_email', 'required','email', 'length[4,100]');
 				$post->add_rules('captcha', 'required', 'Captcha::valid');
