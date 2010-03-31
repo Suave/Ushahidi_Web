@@ -19,4 +19,4 @@ $config['all_languages'] = array ('zh_CN' => 'Chinese', 'en_US'=>'English (US)',
  * Locale timezone. Defaults to use the server timezone.
  * @see http://php.net/timezones
  */
-$config['timezone'] = '';
+$config['timezone'] = 'Asia/Shanghai';
