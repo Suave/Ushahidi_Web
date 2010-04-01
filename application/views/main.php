@@ -171,6 +171,7 @@
 								</div>
 								<?php } ?>
 								<!-- / map -->
+								<p style="margin-top:10px">报道数量曲线</p>
 								<div id="graph" class="graph-holder"></div>
 							</div>
 						</div>
