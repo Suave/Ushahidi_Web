@@ -182,10 +182,14 @@ class Main_Controller extends Template_Controller {
 		}
 		$this->template->content->layers = $layers;
 		//Get a special page
-		$page = ORM::factory('page',7)->find();
+		$page = ORM::factory('page')->find(7);
 		if ($page->loaded)
 		{
 			$this->template->content->bulletin = $page->page_description;
+		}
+		else
+		{
+			$this->template->content->bulletin = '';
 		}
 		// Get all active Shares
 		$shares = array();

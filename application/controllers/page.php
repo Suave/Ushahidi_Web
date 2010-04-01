@@ -30,7 +30,7 @@ class Page_Controller extends Main_Controller {
 			url::redirect('main');
 		}
 		
-		$page = ORM::factory('page',$page_id)->find();
+		$page = ORM::factory('page')->find($page_id);
 		if ($page->loaded)
 		{
 			$this->template->content->page_title = $page->page_title;
