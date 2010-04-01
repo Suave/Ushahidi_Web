@@ -89,8 +89,6 @@ class Main_Controller extends Template_Controller {
 		$this->template->header->videoslider_enabled = FALSE;
 		$this->template->header->protochart_enabled = FALSE;
 		$this->template->header->main_page = FALSE;
-		$bulletin_page = ORM::factory('page',7)->find();
-		$this->template->content->bulletin = $bulletin_page->page_description;
 		
 		$footerjs = new View('footer_form_js');
 		

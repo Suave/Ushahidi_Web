@@ -107,13 +107,6 @@
 								</ol>					
 		
 							</div>
-							
-							<br/>
-							<div class="additional-content">
-								<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
-								<?php echo $bulletin ?>					
-		
-							</div>Bulletin
 							<!-- / additional content -->
 					
 						</div>
