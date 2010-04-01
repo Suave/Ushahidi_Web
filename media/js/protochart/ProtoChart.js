@@ -1224,7 +1224,7 @@ Proto.Chart = Class.create({
 		this.yaxis.ticks.each(function(tick){
 			if (!tick.label || tick.v < this.yaxis.min || tick.v > this.yaxis.max)
 				return;
-			html += '<div id="ylabels" style="position:absolute;top:' + (this.chartOffset.top + this.translateVert(tick.v) - this.yLabelMaxHeight/2) + 'px;left:0;width:' + this.yLabelMaxWidth + 'px;text-align:right" class="tickLabel">' + tick.label + "</div>";
+			html += '<div id="ylabels" style="position:absolute;top:' + (this.chartOffset.top + this.translateVert(tick.v) - this.yLabelMaxHeight/2) + 'px;left:0;width:' + this.yLabelMaxWidth + 'px;text-align:right" class="tickLabel">' + tick.label + "篇</div>";
 		}.bind(this));
 
 		html += '</div>';
