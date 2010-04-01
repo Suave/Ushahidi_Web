@@ -87,23 +87,23 @@
 								<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
 								<ol>
 									<?php if (!empty($phone_array)) 
-									{ ?><li><?php echo Kohana::lang('ui_main.report_option_1')." "; ?> <?php foreach ($phone_array as $phone) {
+									{ ?><li style="margin:4px 0"><?php echo Kohana::lang('ui_main.report_option_1')." "; ?> <?php foreach ($phone_array as $phone) {
 										echo "<strong>". $phone ."</strong>";
 										if ($phone != end($phone_array)) {
 											echo " or ";
 										}
 									} ?></li><?php } ?>
 									<?php if (!empty($report_email)) 
-									{ ?><li><?php echo Kohana::lang('ui_main.report_option_2')." "; ?> <a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a></li><?php } ?>
+									{ ?><li style="margin:4px 0"><?php echo Kohana::lang('ui_main.report_option_2')." "; ?> <a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a></li><?php } ?>
 									<?php if (!empty($twitter_hashtag_array)) 
-												{ ?><li><?php echo Kohana::lang('ui_main.report_option_3')." "; ?>
+									{ ?><li style="margin:4px 0"><?php echo Kohana::lang('ui_main.report_option_3')." "; ?>
 								       <!--<?php foreach ($twitter_hashtag_array as $twitter_hashtag) {
 									echo "<strong>". $twitter_hashtag ."</strong>";
 									if ($twitter_hashtag != end($twitter_hashtag_array)) {
 										echo " or ";
 									}
 									} ?>--></li><?php } ?>
-									<li><a href="<?php echo url::base() . 'reports/submit/'; ?>"><?php echo Kohana::lang('ui_main.report_option_4'); ?></a></li>
+									<li style="margin:4px 0"><a href="<?php echo url::base() . 'reports/submit/'; ?>"><?php echo Kohana::lang('ui_main.report_option_4'); ?></a></li>
 								</ol>					
 		
 							</div>
@@ -171,7 +171,7 @@
 								</div>
 								<?php } ?>
 								<!-- / map -->
-								<p style="margin-top:10px">报道数量曲线</p>
+								<p style="margin-top:10px">报道数量</p>
 								<div id="graph" class="graph-holder"></div>
 							</div>
 						</div>
