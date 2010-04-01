@@ -24,7 +24,7 @@
 									echo " verified_yes";
 								}
 								?>">
-									经过验证<br/>
+									是否解决？<br/>
 									<?php
 									echo ($incident_verified == 1) ?
 										"<span>是</span>" :
