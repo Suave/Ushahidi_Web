@@ -92,7 +92,7 @@
 	//Custom stylesheet
 	echo html::stylesheet(url::base().'themes/'.$site_style."/style.css");
 	?>
-
+        <meta content=" jiuzai.info 是一个灾情信息网站，我们收集来自短信、邮件、微博的灾情报道，发布到网站的地图上，发动草根的力量一起救灾。 " name="description">
 	<!--[if IE 6]>
 	<script type="text/javascript" src="js/ie6pngfix.js"></script>
 	<script type="text/javascript">DD_belatedPNG.fix('img, ul, ol, li, div, p, a');</script>
