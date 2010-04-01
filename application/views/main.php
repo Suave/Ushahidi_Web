@@ -96,12 +96,13 @@
 									<?php if (!empty($report_email)) 
 									{ ?><li><?php echo Kohana::lang('ui_main.report_option_2')." "; ?> <a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a></li><?php } ?>
 									<?php if (!empty($twitter_hashtag_array)) 
-												{ ?><li><?php echo Kohana::lang('ui_main.report_option_3')." "; ?> <?php foreach ($twitter_hashtag_array as $twitter_hashtag) {
+												{ ?><li><?php echo Kohana::lang('ui_main.report_option_3')." "; ?>
+								       <!--<?php foreach ($twitter_hashtag_array as $twitter_hashtag) {
 									echo "<strong>". $twitter_hashtag ."</strong>";
 									if ($twitter_hashtag != end($twitter_hashtag_array)) {
 										echo " or ";
 									}
-									} ?></li><?php } ?>
+									} ?>--></li><?php } ?>
 									<li><a href="<?php echo url::base() . 'reports/submit/'; ?>"><?php echo Kohana::lang('ui_main.report_option_4'); ?></a></li>
 								</ol>					
 		

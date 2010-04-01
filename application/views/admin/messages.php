@@ -174,7 +174,7 @@
 												}
 												elseif ($message_type != 2)
 												{
-													echo "<li class=\"none-separator\"><a href=\"". url::base() . 'admin/reports/edit?mid=' . $message_id ."\">Create Report?</a></li>";
+													echo "<li class=\"none-separator\"><a href=\"". url::base() . 'admin/reports/edit?mid=' . $message_id ."\">创建为报道?</a></li>";
 												}
 												?>
 												<li>
