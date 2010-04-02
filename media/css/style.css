@@ -440,6 +440,15 @@ a.share{
     height: 18px;
 }
 
+div.share{
+    float: left;
+		border-right: 1px solid #999;
+		margin-top:7px;
+		padding:5px 25px 5px 5px;
+    width:200px;
+    height: 18px;
+}
+
 /* map */
 div.map {
     border: #CCCCCC 1px solid;
