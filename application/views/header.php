@@ -114,6 +114,7 @@
 	
 			<!-- searchbox -->
 			<div id="searchbox">
+
 				<div class="share addthis_button" style="text-align:center"><a name="xn_share" type="icon" href="#"></a><script src="http://xnimg.connect.renren.com/js/api/connect/share/share.js" type="text/javascript"></script>
 				<a target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=http://jiuzai.info&title=jiuzai.info&rcontent=jiuzai.info 是一个灾情信息平台，我们收集来自短信、邮件、微博的灾情报道，发布到网站的地图上，发动草根的力量一起救灾。" class="kaixin"><img src="/media/img/kaixin001.gif" alt="share to kaixin001"/>分享到开心</a>
 				</div>
