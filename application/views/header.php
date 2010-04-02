@@ -116,10 +116,10 @@
 			<div id="searchbox">
 
 				<div class="share" style="text-align:center">
-				<span>分享到:</span>
-				<a target="_blank" href="http://www.douban.com/recommend/?url=http://jiuzai.info&title=jiuzai.info" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
-	        		<a target="_blank" href="http://share.renren.com/share/buttonshare.do?link=http://jiuzai.info&title=jiuzai.info"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
-				<a target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=http://jiuzai.info&rtitle=jiuzai.info&rcontent=jiuzai.info 是一个灾情信息平台，我们收集来自短信、邮件、微博的灾情报道，发布到网站的地图上，发动草根的力量一起救灾。" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
+				<span >分享到:</span>
+				<a style="margin-top:4px" target="_blank" href="http://www.douban.com/recommend/?url=http://jiuzai.info&title=jiuzai.info" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
+	        		<a style="margin-top:4px" target="_blank" href="http://share.renren.com/share/buttonshare.do?link=http://jiuzai.info&title=jiuzai.info"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
+				<a style="margin-top:4px" target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=http://jiuzai.info&rtitle=jiuzai.info&rcontent=jiuzai.info 是一个灾情信息平台，我们收集来自短信、邮件、微博的灾情报道，发布到网站的地图上，发动草根的力量一起救灾。" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
 				<span>让更多的人知道。</span>
 				</div>
 
