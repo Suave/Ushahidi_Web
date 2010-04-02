@@ -114,7 +114,7 @@
 	
 			<!-- searchbox -->
 			<div id="searchbox">
-				<div class="share addthis_button">分享到：<a name="xn_share" type="icon" href="#"></a><script src="http://xnimg.connect.renren.com/js/api/connect/share/share.js" type="text/javascript"></script></div>
+				<div class="share addthis_button"><a name="xn_share" type="icon" href="#"></a><script src="http://xnimg.connect.renren.com/js/api/connect/share/share.js" type="text/javascript"></script></div>
 
 				<!-- languages -->
 				<div class="language-box">
