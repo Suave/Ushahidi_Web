@@ -15,7 +15,6 @@
 ?>
 			<div class="bg">
 				<h2><?php echo $title; ?></h2>
-				<a href="https://docs.google.com/Doc?docid=0Acqeud8B1_cHZGc3cHdudG1fMjZkdnFocGZmbQ&hl=en" >志愿者工作指南</a>
 				<!-- column -->
 				<div class="column">
 					

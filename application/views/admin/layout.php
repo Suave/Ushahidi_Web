@@ -153,6 +153,7 @@
 			</div>
 			<!-- title -->
 			<h1><?php echo $site_name ?></h1>
+			<a href="https://docs.google.com/Doc?docid=0Acqeud8B1_cHZGc3cHdudG1fMjZkdnFocGZmbQ&hl=en" >志愿者工作指南</a>
 			<!-- nav-holder -->
 			<div class="nav-holder">
 				<!-- main-nav -->
