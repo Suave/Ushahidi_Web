@@ -92,7 +92,7 @@
 										if ($phone != end($phone_array)) {
 											echo " or ";
 										}
-									} ?></li><?php } ?>
+									} ?> [不能通话]</li><?php } ?>
 									<?php if (!empty($report_email)) 
 									{ ?><li style="margin:4px 0"><?php echo Kohana::lang('ui_main.report_option_2')." "; ?> <a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a></li><?php } ?>
 									<?php if (!empty($twitter_hashtag_array)) 
