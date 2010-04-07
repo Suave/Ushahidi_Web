@@ -514,12 +514,12 @@ class Reports_Controller extends Admin_Controller
 			// Validate Personal Information
 			if (!empty($_POST['person_first']))
 			{
-				$post->add_rules('person_first', 'length[3,100]');
+				$post->add_rules('person_first', 'length[0,100]');
 			}
 			
 			if (!empty($_POST['person_last']))
 			{
-				$post->add_rules('person_last', 'length[3,100]');
+				$post->add_rules('person_last', 'length[0,100]');
 			}
 			
 			if (!empty($_POST['person_email']))
