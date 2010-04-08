@@ -71,6 +71,9 @@
 										<li><img align="absmiddle" alt="Incident" src="<?php echo url::base(); ?>media/img/incident-pointer.jpg"/> 发生位置</li>
 										<li><img align="absmiddle" alt="Nearby Incident" src="<?php echo url::base(); ?>media/img/nearby-incident-pointer.jpg"/> 附近其他事件</li>
 									</ul>
+									<br/>
+                                                                <div style="color:#228;margin-top:2px;font-weight:bold">下面的 “+” 按钮可以切换图层 </div>
+								</div>
 								</div>
 								<p style="text-align:right;color:#228;font-weight:bold">下面的 “+” 按钮可以切换图层</div>
 								<div class="report-map">
