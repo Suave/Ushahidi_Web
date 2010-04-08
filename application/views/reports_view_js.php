@@ -49,14 +49,14 @@
 				});
                                 
                             
-                            google_hyb = new OpenLayers.Layer.Google("Google 混合地图｀", {
+                            google_hyb = new OpenLayers.Layer.Google("Google 混合地图", {
 				type: G_HYBRID_MAP,
 				sphericalMercator: true,
 				maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
 				});
                                 
                             
-                            google_phy = new OpenLayers.Layer.Google("Google 卫星图", {
+                            google_phy = new OpenLayers.Layer.Google("Google 地形图", {
 				type: G_PHYSICAL_MAP,
 				sphericalMercator: true,
 				maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
