@@ -36,36 +36,33 @@
 			map.addControl( new OpenLayers.Control.LoadingPanel({minSize: new OpenLayers.Size(573, 366)}) );
 			
 			var default_map = <?php echo $default_map; ?>;
-			if (default_map == 2)
-			{
-				map_layer = new OpenLayers.Layer.VirtualEarth("virtualearth", {
+			
+			    google_map = new OpenLayers.Layer.Google("Google 地图", {
 					sphericalMercator: true,
 					maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
 					});
-			}
-			else if (default_map == 3)
-			{
-				map_layer = new OpenLayers.Layer.Yahoo("yahoo", {
-					sphericalMercator: true,
-					maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
-					});
-			}
-			else if (default_map == 4)
-			{
-				map_layer = new OpenLayers.Layer.OSM.Mapnik("openstreetmap", {
-					sphericalMercator: true,
-					maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
-					});
-			}
-			else
-			{
-				map_layer = new OpenLayers.Layer.Google("google", {
-					sphericalMercator: true,
-					maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
-					});
-			}
+			
+                            google_sat = new OpenLayers.Layer.Google("Google 卫星图", {
+				type: G_SATELLITE_MAP,
+				sphericalMercator: true,
+				maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
+				});
+                                
+                            
+                            google_hyb = new OpenLayers.Layer.Google("Google 混合地图｀", {
+				type: G_HYBRID_MAP,
+				sphericalMercator: true,
+				maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
+				});
+                                
+                            
+                            google_phy = new OpenLayers.Layer.Google("Google 卫星图", {
+				type: G_PHYSICAL_MAP,
+				sphericalMercator: true,
+				maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34)
+				});    
 	
-			map.addLayer(map_layer);
+			map.addLayers([google_map,google_sat,google_hyb,google_phy]);
 	
 			map.addControl(new OpenLayers.Control.Navigation());
 			map.addControl(new OpenLayers.Control.PanZoomBar());
