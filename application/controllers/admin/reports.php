@@ -462,7 +462,7 @@ class Reports_Controller extends Admin_Controller
 	        // $post->add_rules('locale','required','alpha_dash','length[5]');
 			$post->add_rules('location_id','numeric');
 			$post->add_rules('message_id','numeric');
-			$post->add_rules('incident_title','required', 'length[3,200]');
+			$post->add_rules('incident_title','required', 'length[1,200]');
 			$post->add_rules('incident_description','required');
 			$post->add_rules('incident_date','required','date_mmddyyyy');
 			$post->add_rules('incident_hour','required','between[1,12]');
@@ -1207,7 +1207,7 @@ class Reports_Controller extends Admin_Controller
 
 	        // Add some rules, the input field, followed by a list of checks, carried out in order
 	        $post->add_rules('locale','required','alpha_dash','length[5]');
-			$post->add_rules('incident_title','required', 'length[3,200]');
+			$post->add_rules('incident_title','required', 'length[1,200]');
 			$post->add_rules('incident_description','required');
 			$post->add_callbacks('locale', array($this,'translate_exists_chk'));
 			
