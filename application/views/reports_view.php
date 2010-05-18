@@ -88,11 +88,17 @@
 						<div class="content">
 							<?php echo $incident_description; ?>
 							<div class="credibility">
-								可信度:
+								<p>可信度:
 								<a href="javascript:rating('<?php echo $incident_id; ?>','add','original','oloader_<?php echo $incident_id; ?>')"><img id="oup_<?php echo $incident_id; ?>" src="<?php echo url::base() . 'media/img/'; ?>thumb-up.jpg" alt="UP" title="UP" border="0" /></a>&nbsp;
 								<a href="javascript:rating('<?php echo $incident_id; ?>','subtract','original')"><img id="odown_<?php echo $incident_id; ?>" src="<?php echo url::base() . 'media/img/'; ?>thumb-down.jpg" alt="DOWN" title="DOWN" border="0" /></a>&nbsp;
 								<a href="" class="rating_value" id="orating_<?php echo $incident_id; ?>"><?php echo $incident_rating; ?></a>
 								<a href="" id="oloader_<?php echo $incident_id; ?>" class="rating_loading" ></a>
+								</p>
+								<p>分享：
+								  <a style="margin-top:4px" target="_blank" href="http://www.douban.com/recommend/?url=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<? $incident_title ?>" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
+          	      <a style="margin-top:4px" target="_blank" href="http://share.renren.com/share/buttonshare.do?link=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<? $incident_title ?>"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
+          				<a style="margin-top:4px" target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&rtitle=<? $incident_title ?>&rcontent=<? $incident_description ?>" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
+          			</p>
 							</div>
 						</div>
 						<div class="orig-report">
