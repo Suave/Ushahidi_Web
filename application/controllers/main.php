@@ -262,11 +262,9 @@ class Main_Controller extends Template_Controller {
 		foreach ($query as $query_active)
 		{
 			$active_month = date('n') - 1;
-			$active_start_month = $active_month - 1;
-			$active_end_month = $active_month + 1;
 			$active_year = date('Y', strtotime($query_active->incident_date));
-			$active_startDate = strtotime($active_year . "-" . $active_start_month . "-01");
-			$active_endDate = strtotime($active_year . "-" . $active_end_month . 
+			$active_startDate = strtotime($active_year . "-" . $active_month . "-01");
+			$active_endDate = strtotime($active_year . "-" . $active_month . 
 				"-" . date('t', mktime(0,0,0,$active_month,1))." 23:59:59");
 		}
 		
