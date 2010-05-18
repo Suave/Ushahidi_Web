@@ -261,10 +261,10 @@ class Main_Controller extends Template_Controller {
 		$query = $db->query('SELECT incident_date, count(*) AS incident_count FROM '.$this->table_prefix.'incident WHERE incident_active = 1 GROUP BY DATE_FORMAT(incident_date, \'%Y-%m\') ORDER BY incident_count DESC LIMIT 1');
 		foreach ($query as $query_active)
 		{
-			$active_month = date('n', strtotime($query_active->incident_date));
+			$active_month = date('n') - 1;
 			$active_year = date('Y', strtotime($query_active->incident_date));
-			$active_startDate = strtotime($active_year . "-" . $active_month . "-01");
-			$active_endDate = strtotime($active_year . "-" . $active_month . 
+			$active_startDate = strtotime($active_year . "-" . ($active_month - 1) . "-01");
+			$active_endDate = strtotime($active_year . "-" . ($active_month + 1) . 
 				"-" . date('t', mktime(0,0,0,$active_month,1))." 23:59:59");
 		}
 		
