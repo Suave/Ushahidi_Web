@@ -95,9 +95,9 @@
 								<a href="" id="oloader_<?php echo $incident_id; ?>" class="rating_loading" ></a>
 								</p>
 								<p>分享：
-								  <a style="margin-top:4px" target="_blank" href="http://www.douban.com/recommend/?url=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<? $incident_title ?>" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
-          	      <a style="margin-top:4px" target="_blank" href="http://share.renren.com/share/buttonshare.do?link=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<? $incident_title ?>"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
-          				<a style="margin-top:4px" target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&rtitle=<? $incident_title ?>&rcontent=<? $incident_description ?>" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
+								  <a style="margin-top:4px" target="_blank" href="http://www.douban.com/recommend/?url=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<?php echo $incident_title ?>" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
+          	      <a style="margin-top:4px" target="_blank" href="http://share.renren.com/share/buttonshare.do?link=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<?php echo $incident_title ?>"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
+          				<a style="margin-top:4px" target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&rtitle=<?php echo $incident_title ?>&rcontent=<?php echo $incident_description ?>" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
           			</p>
 							</div>
 						</div>
