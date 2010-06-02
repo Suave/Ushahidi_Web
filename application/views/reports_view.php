@@ -266,8 +266,14 @@
 					</div>
 					<!-- end incident block <> start other report -->
 
-
 					<!-- end incident block <> start other report -->
+					<div class="apply">
+					  <h2>我有资源</h2>
+					  <div class="big_block">
+					    <iframe src='http://www.sojump.com/jq/307295,i,t.aspx?width=680&source=iframe' width='900' height='500px' frameborder='0' scrolling='auto'></iframe>
+					  </div>
+					</div>
+					
 					<a name="comments"></a>
 					<div class="big-block">
 						<div id="comments" class="report_comment">
