@@ -270,7 +270,7 @@
 					<div class="report-description">
 					  <h3>我有资源</h3>
 					  <div class="block-bg">
-							<div style="overflow:auto; white-space: nowrap; padding: 10px">
+							<div style="white-space: nowrap; padding: 10px">
 					      <iframe src='http://www.sojump.com/jq/307295,i,t.aspx?width=680&source=iframe' width='900' height='500px' frameborder='0' scrolling='auto'></iframe>
 					    </div>
 					  </div>
