@@ -24,6 +24,8 @@
 									<strong>玉树救灾地图</strong>
 								</div>
 							</div>
+							<iframe width="900" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.com/maps/ms?ie=UTF8&amp;hl=zh-CN&amp;brcurrent=3,0x31508e64e5c642c1:0x951daa7c349f366f,0%3B5,0,0&amp;msa=0&amp;msid=104981151854953923611.000487ef5787556a42b6b&amp;ll=35.85344,104.194336&amp;spn=10.374811,19.753418&amp;output=embed"></iframe><br />
+							<p>编辑<a href="http://ditu.google.com/maps/ms?ie=UTF8&amp;hl=zh-CN&amp;brcurrent=3,0x31508e64e5c642c1:0x951daa7c349f366f,0%3B5,0,0&amp;msa=0&amp;msid=104981151854953923611.000487ef5787556a42b6b&amp;ll=35.85344,104.194336&amp;spn=10.374811,19.753418&amp;source=embed" style="color:#0000FF;text-align:left">救援团队地图</a></p>
 												<?php
 											 	foreach ($organizations as $organization)
 												{

@@ -93,12 +93,16 @@
 								<a href="javascript:rating('<?php echo $incident_id; ?>','subtract','original')"><img id="odown_<?php echo $incident_id; ?>" src="<?php echo url::base() . 'media/img/'; ?>thumb-down.jpg" alt="DOWN" title="DOWN" border="0" /></a>&nbsp;
 								<a href="" class="rating_value" id="orating_<?php echo $incident_id; ?>"><?php echo $incident_rating; ?></a>
 								<a href="" id="oloader_<?php echo $incident_id; ?>" class="rating_loading" ></a>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分享：
+								  <a style="margin-top:4px" target="_blank" href="http://www.douban.com/recommend/?url=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<?php echo $incident_title ?>" ><img src="http://www.jiuzai.info//media/img/douban.gif" alt="share to douban"/></a>
+          	      <a style="margin-top:4px" target="_blank" href="http://share.renren.com/share/buttonshare.do?link=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&title=<?php echo $incident_title ?>"><img src="http://www.jiuzai.info//media/img/renren.gif" alt="share to renren"/></a>
+          				<a style="margin-top:4px" target="_blank" href="http://www.kaixin001.com/repaste/share.php?rurl=<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>&rtitle=<?php echo $incident_title ?>&rcontent=<?php echo $incident_description ?>" ><img src="http://www.jiuzai.info//media/img/kaixin001.gif" alt="share to kaixin001"/></a>
 							</div>
 						</div>
 						<div class="orig-report">
 							<div class="discussion">
 								<h5>补充报道或发表意见&nbsp;&nbsp;&nbsp;(<a href="#comments">添加</a>)</h5>
-						                <p style="color:#666">你也可以充分利用各种网络资源，豆瓣小组,微博客，<a href="http://home.ngocn.org/" target="_blank">NGOCN社区</a>，<a href="http://www.1kg.org" target="_blank">多背一公斤小组</a>，聊天软件等手段来做具体的交流，请在这里留下入口，让更多人可以参与</p>
+						                <p style="color:#666">你也可以充分利用各种网络资源，豆瓣小组,微博客，<a href="http://home.ngocn.org/" target="_blank">NGOCN社区</a>，<a href="http://www.1kg.org/groups/305" target="_blank">多背一公斤抗旱救灾小组</a>， <a href="http://www.1kg.org/groups/323">多背一公斤情系玉树小组</a>，聊天软件等手段来做具体的交流，请在这里留下入口，让更多人可以参与</p>
 								<?php
 								foreach($incident_comments as $comment)
 								{
@@ -262,8 +266,16 @@
 					</div>
 					<!-- end incident block <> start other report -->
 
-
 					<!-- end incident block <> start other report -->
+					<div class="report-description">
+					  <h3>我有资源</h3>
+					  <div class="block-bg">
+							<div style="white-space: nowrap; padding: 10px">
+					      <iframe src='http://www.sojump.com/jq/307295,i,t.aspx?width=680&source=iframe' width='900' height='500px' frameborder='0' scrolling='auto'></iframe>
+					    </div>
+					  </div>
+					</div>
+					
 					<a name="comments"></a>
 					<div class="big-block">
 						<div id="comments" class="report_comment">
