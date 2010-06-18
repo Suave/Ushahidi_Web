@@ -21,7 +21,7 @@
 							<h1> <?php echo $pagination_stats; ?></h1>
 							<div class="org_rowtitle">
 								<div class="org_col1">
-									<strong>救援团队/组织</strong>
+									<strong>玉树救灾地图</strong>
 								</div>
 							</div>
 												<?php
